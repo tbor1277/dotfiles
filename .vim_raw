@@ -1,0 +1,42 @@
+# raw_vim project
+" this is my raw vim project where i customize it to fit my needs.
+" no fancy stuff, cute colors, useless functions. just raw vim with
+" plugins and features i need.
+
+" turn on spellcheck if editing .tex, .txt, .md, and .rst files
+autocmd BufNewFile,BufRead *.tex, *.md,*.txt,*.rst setlocal spell spelllang=en_us
+
+" Plugins 
+Plugin 'scrooloose/syntastic'
+" Auto-Indentation conforming to PEP 8 standards
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/nerdtree'
+
+" handle proper PEP 8 indentation if working on Python files
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" additional au for full stack development
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
+
+
+" NERDTree settings -----------------------------
+map <F3> :NERDTreeToggle<CR> 
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+
+
+" some vim basic needs for me -----------------------------
+set number relativenumber
+set encoding=utf-8
+syntax on 
+colo aurora
