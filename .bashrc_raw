@@ -1,0 +1,20 @@
+# raw_bashrc project
+" this is my raw bashrc project where i customize it to fit my needs.
+" no fancy stuff, cute colors, useless functions. just raw bashrc with
+" plugins and features i need.
+
+# aliases collections
+alias ll='ls -alF' 
+alias la='ls -A' 
+alias l='ls -CF' 
+alias c='clear'
+alias home='cd ~'
+alias root='cd /'
+alias ..='cd ..'
+alias python='python3'
+alias pip='pip3'
+
+#-- symlinks --#
+ln -sv “~/.dotfiles/.bash_profile” ~
+ln -sv “~/.dotfiles/.vimrc” ~
+ln -sv “~/.dotfiles/.bashrc” ~
