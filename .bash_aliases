@@ -11,6 +11,8 @@ alias i3config='vim ~/.config/i3/config'
 alias vimconfig='vim ~/.vimrc'
 alias bashconfig='vim ~/.bashrc'
 alias bashalias='vim ~/.bash_aliases'
+
+# -- basic navigation -- #
 alias c='clear'
 alias home='cd ~'
 alias root='cd /'

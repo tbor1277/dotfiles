@@ -1,9 +1,18 @@
 # raw_bashrc project
-" this is my raw bashrc project where i customize it to fit my needs.
-" no fancy stuff, cute colors, useless functions. just raw bashrc with
-" plugins and features i need.
 
-# aliases collections
+# instant shutdown computer
+alias sdn='shutdown -h now'
+
+# instant restart the computer
+alias sdr='shutdown -r now'
+
+# -- alias to my dotfiles -- #
+alias i3config='vim ~/.config/i3/config'
+alias vimconfig='vim ~/.vimrc'
+alias bashconfig='vim ~/.bashrc'
+alias bashalias='vim ~/.bash_aliases'
+
+# -- basic navigation -- #
 alias ll='ls -alF' 
 alias la='ls -A' 
 alias l='ls -CF' 
@@ -14,7 +23,3 @@ alias ..='cd ..'
 alias python='python3'
 alias pip='pip3'
 
-#-- symlinks --#
-ln -sv “~/.dotfiles/.bash_profile” ~
-ln -sv “~/.dotfiles/.vimrc” ~
-ln -sv “~/.dotfiles/.bashrc” ~
