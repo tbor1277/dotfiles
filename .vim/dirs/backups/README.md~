@@ -26,10 +26,6 @@ This is a collection of my dotfiles. I'm currently using fisa vim config and bas
 
 `./install-packages.sh`
 
-5. create symlinks for the dotfiles
-
-`./create-symlinks.sh` 
-
 
 # Install vim plugins
 To install vim plugins when first loggin into vim, type `:PlugInstall`.

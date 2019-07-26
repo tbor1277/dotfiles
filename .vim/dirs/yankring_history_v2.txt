@@ -1,0 +1,100 @@
+install packages ,v
+4,v
+4. install packages ,V
+ the install.sh file,v
+4.  the install.sh file`./install-packages.sh`# Install vim pluginsTo install vim plugins when first loggin into vim, type `:PlugInstall`.,V
+run,v
+h,v
+s,v
+.,v
+install,v
+`,v
+install-packages.sh`,v
+symlinks,v
+create,v
+~/dotfiles/install-scripts/Linux/create-symlinks.sh`,v
+2,v
+3,v
+,V
+`touch ~/install_progress_log.txt`,V
+2. create text files to log progress of the installation. ,V
+Variables,v
+#============== # Variables #============== ,V
+log_file=~/install_progress_log.txt ,V
+dotfiles_dir=~/dotfiles ,V
+#============== # Variables #============== dotfiles_dir=~/dotfiles log_file=~/install_progress_log.txt ,V
+#==============# Create text file to log progress of the installation#==============touch ~/install_progress_log.txt,V
+and ,v
+create-symlinks.sh`,v
+`chmod +x ~/dotfiles/install-scripts/Linux/create-symlinks.sh`,V
+dEInstall.sh`,v
+`cd dotfiles`,V
+go to the dotfile folder,V
+ ,v
+sudo rm -rf ~/.vim > /dev/null 2>&1,V
+1,v
+Jarrod,v
+# dotfiles symlinks,V
+tigrc,v
+sudo rm -rf ~/.psqlrc > /dev/null 2>&1,V
+sudo rm -rf ~/.antigen.zsh > /dev/null 2>&1,V
+sudo rm -rf ~/.antigen > /dev/null 2>&1,V
+sudo rm -rf ~/.gitconfig > /dev/null 2>&1,V
+sudo rm -rf ~/.zshrc > /dev/null 2>&1,V
+sudo rm -rf ~/.zsh_prompt > /dev/null 2>&1,V
+sudo rm -rf ~/.tmux.conf > /dev/null 2>&1,V
+sudo rm -rf ~/.tmux > /dev/null 2>&1,V
+install ,v
+zsh,v
+sh,v
+q,v
+:,v
+,2
+nomodeset,v
+=,v
+o,v
+radeon,v
+# bindsym $mod+h split h,V
+#,v
+bindsym $mod+v split v,V
+alias python='python3',V
+t,v
+# Create your models here.,V
+",v
+p,v
+Logout,v
+logout,v
+                  <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>,V
+    <div class="content-section">        <form method="POST">            {% csrf_token %}            <fieldset class="form-group">                <legend class="border-bottom mb-4">Log In</legend>                {{ form|crispy }}            </fieldset>            <div class="form-group">                <button class="btn btn-outline-info" type="submit">Login</button>            </div>        </form>        <div class="border-top pt-3">            <small class="text-muted">                Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up</a>            </small>        </div>    </div>,V
+{% extends "blog/base.html" %}{% load crispy_forms_tags %}{% block content %}    <div class="content-section">        <form method="POST">            {% csrf_token %}            <fieldset class="form-group">                <legend class="border-bottom mb-4">Log In</legend>                {{ form|crispy }}            </fieldset>            <div class="form-group">                <button class="btn btn-outline-info" type="submit">Login</button>            </div>        </form>        <div class="border-top pt-3">            <small class="text-muted">                Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up</a>            </small>        </div>    </div>{% endblock content %},V
+l,v
+Login,v
+login,v
+                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>,V
+{% url 'login' %},v
+        <div class="border-top pt-3">,V
+        </div>,V
+    </div>,V
+class="ml-2",v
+Sign,v
+Already Have An Account? ,v
+        <form method="POST">            {% csrf_token %}            <fieldset class="form-group">                <legend class="border-bottom mb-4">Join Today</legend>                {{ form|crispy }}            </fieldset>            <div class="form-group">                <button class="btn btn-outline-info" type="submit">Sign Up</button>            </div>        </form>,V
+{% load crispy_forms_tags %},V
+{% extends "blog/base.html" %}{% load crispy_forms_tags %}{% block content %}    <div class="content-section">        <form method="POST">            {% csrf_token %}            <fieldset class="form-group">                <legend class="border-bottom mb-4">Join Today</legend>                {{ form|crispy }}            </fieldset>            <div class="form-group">                <button class="btn btn-outline-info" type="submit">Sign Up</button>            </div>        </form>        <div class="border-top pt-3">            <small class="text-muted">                Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>            </small>        </div>    </div>{% endblock content %},V
+register,v
+home,v
+-,v
+n,v
+blog,v
+!,v
+ "!"),v
+ +,v
++ username,v
+Account created for ,v
+{% url 'register' %}",v
+#">,v
+% url 'register' %,v
+In,v
+Have ,v
+Already,v
+Up,v

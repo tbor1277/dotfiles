@@ -1,0 +1,25 @@
+#!/usr/bin/env sh 
+
+#==============
+# Create text file to log progress of the installation
+#==============
+touch ~/install_progress_log.txt
+
+log_file=~/install_progress_log.txt
+
+sudo apt-get install i3 
+if type -p zsh > /dev/null; then
+    echo "i3 Installed" >> $log_file
+else
+    echo "i3 FAILED TO INSTALL!!!" >> $log_file
+fi
+
+
+#==============
+# Give the user a summary of what has been installed
+#==============
+echo -e "\n====== Summary ======\n"
+cat $log_file
+echo
+echo "Enjoy -tbor"
+rm $log_file

@@ -1,0 +1,13 @@
+# raw_bashrc project
+
+# -- basic navigation -- #
+alias ll='ls -alF' 
+alias la='ls -A' 
+alias l='ls -CF' 
+alias c='clear'
+alias home='cd ~'
+alias root='cd /'
+alias ..='cd ..'
+alias python='python3'
+alias pip='pip3'
+
